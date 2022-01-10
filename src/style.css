@@ -1,1 +1,82 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #065f06;
+}
+
+.card {
+  position: relative;
+  float: left;
+  margin: 10px;
+  width: 150px;
+  height: 220px;
+  border-radius: 10px;
+  background: #fff;
+  -webkit-box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+.card p {
+  text-align: center;
+  font: 80px/200px "Playfair Display", serif;
+  margin-bottom: auto;
+}
+.diamondssuit:before,
+.diamondssuit:after {
+  content: "♦";
+  color: #ff0000;
+}
+
+.heartssuit:before,
+.heartssuit:after {
+  content: "♥";
+  color: #ff0000;
+}
+
+.clubssuit:before,
+.clubssuit:after {
+  content: "♣";
+  color: #000;
+}
+
+.spadessuit:before,
+.spadessuit:after {
+  content: "♠";
+  color: #000;
+}
+
+div[class*="suit"]:before {
+  position: absolute;
+  font-size: 50px;
+  left: 5px;
+  top: 2px;
+}
+
+div[class*="suit"]:after {
+  position: absolute;
+  font-size: 50px;
+  right: 5px;
+  bottom: 2px;
+}
+
+/* Botones */
+.buttons {
+  margin-top: 250px;
+  position: absolute;
+}
+#random {
+  padding: 10px;
+}
+
+#another {
+  padding: 10px;
+  margin: 0 5px 0 5px;
+}
+
+#unique {
+  padding: 10px;
+}
